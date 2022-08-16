@@ -67,7 +67,7 @@ const Keyboard = () => {
       <button className={`${theme === 2 ? 'bg-[#331b4d] border-[#712c88] shadow-[#712c88] hover:bg-[#6934b1]' : 'bg-[#eae3db] border-[#afa69f] shadow-[#afa69f] hover:bg-white'} h-[4.8rem] text-3xl font-bold border border-b-2  shadow-sm  active:shadow-none active:translate-y-[3%] italic`}
       onClick={() => dispatch(updateExpr('sqrt('))} >sqrt</button>
       <button className={`${theme === 2 ? 'bg-[#331b4d] border-[#712c88] shadow-[#712c88] hover:bg-[#6934b1]' : 'bg-[#eae3db] border-[#afa69f] shadow-[#afa69f] hover:bg-white'} h-[4.8rem] text-3xl font-bold border border-b-2  shadow-sm  active:shadow-none active:translate-y-[3%] italic flex items-center justify-center`}
-      onClick={() => dispatch(updateExpr('cbrt('))} >cbrt(x)</button>
+      onClick={() => dispatch(updateExpr('cbrt('))} >cbrt</button>
       <button className={`${theme === 2 ? 'bg-[#331b4d] border-[#712c88] shadow-[#712c88] hover:bg-[#6934b1]' : 'bg-[#eae3db] border-[#afa69f] shadow-[#afa69f] hover:bg-white'} h-[4.8rem] text-3xl font-bold border border-b-2  shadow-sm  active:shadow-none active:translate-y-[3%] italic flex items-center justify-center`}
       onClick={() => dispatch(updateExpr('log('))} >ln(x)</button>
       <button className={`${theme === 2 ? 'bg-[#331b4d] border-[#712c88] shadow-[#712c88] hover:bg-[#6934b1]' : 'bg-[#eae3db] border-[#afa69f] shadow-[#afa69f] hover:bg-white'} h-[4.8rem] text-3xl font-bold border border-b-2  shadow-sm  active:shadow-none active:translate-y-[3%] italic`}
