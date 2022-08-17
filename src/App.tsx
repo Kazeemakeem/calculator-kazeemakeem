@@ -11,10 +11,12 @@ function App() {
   const dispatch = useAppDispatch()
   const theme = useAppSelector(state => state.header.theme) % 3
   return (
-    <div className={`App h-screen ${theme === 0 ? 'bg-[#3b4664]' : ''} ${theme === 1 ? 'bg-[#e6e6e6]' : ''} ${theme === 2 ? 'bg-[#17062a]' : ''} flex flex-col gap-8 justify-center min-w-[40rem] mx-auto`}>
-      <HeaderView />
-      <Screen />
-      <Keyboard />
+    <div className={`App h-screen ${theme === 0 ? 'bg-[#3b4664]' : ''} ${theme === 1 ? 'bg-[#e6e6e6]' : ''} ${theme === 2 ? 'bg-[#17062a]' : ''}  min-w-[40rem] mx-auto`}>
+      <div className='px-3 sm:px-0 h-full w-full flex flex-col gap-8 justify-center items-center'>
+        <HeaderView />
+        <Screen />
+        <Keyboard />
+      </div>
     </div>
   );
 }
