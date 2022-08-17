@@ -9,7 +9,7 @@ const HeaderView = () => {
   const theme = useAppSelector(state => state.header.theme) % 3
 
   return (
-    <div className={`flex flex-col w-[40rem] mx-auto mb-2 ${theme === 0 ? 'text-white' : ''}${theme === 1 ? 'text-gray-700' : ''}${theme === 2 ? 'text-[#fdee45]' : ''}`}>
+    <div className={`flex flex-col w-[35rem]  sm:w-[40rem] mx-auto mb-2 ${theme === 0 ? 'text-white' : ''}${theme === 1 ? 'text-gray-700' : ''}${theme === 2 ? 'text-[#fdee45]' : ''}`}>
       <div className={`font-bold text-xl flex w-[6rem] px-2 justify-between self-end`}>
         <p className='text-inherit'>1</p>
         <p className='text-inherit'>2</p>
