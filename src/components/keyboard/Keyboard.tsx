@@ -86,7 +86,7 @@ const Keyboard = () => {
       onClick={() => dispatch(resetExpr())}>ac</button>
       <button className={`${theme === 2 ? 'bg-[#331b4d] border-[#712c88] shadow-[#712c88] hover:bg-[#6934b1]' : 'bg-[#eae3db] border-[#afa69f] shadow-[#afa69f] hover:bg-white'} h-[4.8rem] text-3xl font-bold border border-b-2  shadow-sm  active:shadow-none active:translate-y-[3%]`}
       onClick={() => dispatch(updateExpr('Ans'))} >Ans</button>
-      <button className={`h-[4.8rem] text-5xl font-bold border border-b-2 shadow-sm ${ theme === 2 ? 'bg-[#00decf] border-[#73f5f7] shadow-[#73f5f7] text-gray-700 hover:bg-[#94fff9]' : 'bg-[#d13f30] border-[#91291b] shadow-[#91291b] text-white hover:bg-[#f96c5b]'}  active:shadow-none active:translate-y-[3%] col-span-2 pb-2`}onClick={() => dispatch(returnAns(Function('return ' + expr.replace('x','*').replace('(','*(').replace('cbrt*(','Math.cbrt(').replace('^','**').replace('sqrt*(','Math.sqrt(').replace('log*(','Math.log10(').replace('ln*(','Math.log(').replace('Ans', ans))().toString()))}>=</button>
+      <button className={`h-[4.8rem] text-5xl font-bold border border-b-2 shadow-sm ${ theme === 2 ? 'bg-[#00decf] border-[#73f5f7] shadow-[#73f5f7] text-gray-700 hover:bg-[#94fff9]' : 'bg-[#d13f30] border-[#91291b] shadow-[#91291b] text-white hover:bg-[#f96c5b]'}  active:shadow-none active:translate-y-[3%] col-span-2 pb-2`}onClick={() => dispatch(returnAns(Function('return ' + expr.replace('x','*').replace('(','*(').replace('cbrt*(','Math.cbrt(').replace('^*(', '^(').replace('^','**').replace('sqrt*(','Math.sqrt(').replace('log*(','Math.log10(').replace('ln*(','Math.log(').replace('Ans', ans))().toString()))}>=</button>
       
     </div>
   )
