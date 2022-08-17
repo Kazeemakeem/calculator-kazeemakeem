@@ -9,7 +9,7 @@ const Keyboard = () => {
   const ans = useAppSelector(state => state.screen.ans)
   
   return (
-    <div className={`${theme === 0 ? 'bg-[#252d44] text-[#252d44]' : ''} ${theme === 1 ? 'bg-[#d2cccc] text-[#252d44]' : ''} ${theme === 2 ? 'bg-[#1e0836] text-[#fdee45]' : ''} mx-auto w-[40rem] rounded-2xl  grid grid-cols-4 gap-8 px-10 py-10`}>
+    <div className={`${theme === 0 ? 'bg-[#252d44] text-[#252d44]' : ''} ${theme === 1 ? 'bg-[#d2cccc] text-[#252d44]' : ''} ${theme === 2 ? 'bg-[#1e0836] text-[#fdee45]' : ''} mx-auto w-[40rem] max-h-[50.6rem] rounded-2xl  grid grid-cols-4 gap-8 px-10 py-10`}>
       <button className={`${theme === 2 ? 'bg-[#331b4d] border-[#712c88] shadow-[#712c88] hover:bg-[#6934b1]' : 'bg-[#eae3db] border-[#afa69f] shadow-[#afa69f] hover:bg-white'} h-[4.8rem] text-5xl font-bold border border-b-2  shadow-sm  active:shadow-none active:translate-y-[3%]`} 
       onClick={() => dispatch(updateExpr('7'))} >7</button>
       <button className={`${theme === 2 ? 'bg-[#331b4d] border-[#712c88] shadow-[#712c88] hover:bg-[#6934b1]' : 'bg-[#eae3db] border-[#afa69f] shadow-[#afa69f] hover:bg-white'} h-[4.8rem] text-5xl font-bold border border-b-2  shadow-sm  active:shadow-none active:translate-y-[3%]`}
